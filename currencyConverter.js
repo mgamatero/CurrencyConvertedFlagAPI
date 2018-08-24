@@ -23,7 +23,7 @@ $(document).ready(function () {
     var flagName=""
 
     function convert() {
-        $.get("http://apilayer.net/api/live?access_key=" + key + "&from=" + sourceCurrency + "&to=" + destinationCurrency)
+        $.get("https://apilayer.net/api/live?access_key=" + key + "&from=" + sourceCurrency + "&to=" + destinationCurrency)
             .done(function (data) {
                 console.log(data)  //returns JSON
                 
