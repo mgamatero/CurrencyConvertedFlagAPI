@@ -5,14 +5,15 @@
 }
 
 .convertTo, .countryGrid{
-    background-color: rgb(54, 52, 52);
+    background-color: rgb(88, 85, 85);
     border: solid 1px greenyellow;
     color:greenyellow;
     font-family: 'PT Serif', serif;
 }
 
 .countryGrid{
-    max-width:50%;
+    align-content: center;
+    max-width: 30%;
 }
 
 .currency{
@@ -21,6 +22,10 @@
 
 .converted{
      font-size:3rem;
+}
+
+.convertTo{
+    margin-left: 10px;
 }
 
 

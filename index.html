@@ -15,37 +15,33 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">USD Currency Converter</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand" href="#"><h2>Currency Converter - </h2></a>
+   <span><h2>Convert from USD to </h2></span>
+    <div class="convertTo">
+      <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Select country: 
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#" data="AFN" value="AF">Afghanistan</a>
+            <a class="dropdown-item" href="#" data="AUD" value="AU">Australia</a>
+            <a class="dropdown-item" href="#" data="BGN" value="BG">Bulgaria</a>
+            <a class="dropdown-item" href="#" data="EUR" value="GR">Greece</a>
+            <a class="dropdown-item" href="#" data="ISK" value="IS">Iceland</a>
+            <a class="dropdown-item" href="#" data="JMD" value="JM">Jamaica</a>
+            <a class="dropdown-item" href="#" data="MXN" value="MX">Mexico</a>
+            <a class="dropdown-item active" href="#" data="PHP" value="PH">Phillipines</a>
+          </div>
+        </div>
+  </div>
+    
   </nav>
   <div class="container">
-    <span> Source: USD</span>
+    
 
     <main>
       <div class="row">
-        <div class="convertTo">
-            <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                  Select country: 
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#" data="AFN" value="AF">Afghanistan</a>
-                  <a class="dropdown-item" href="#" data="AUD" value="AU">Australia</a>
-                  <a class="dropdown-item" href="#" data="BGN" value="BG">Bulgaria</a>
-                  <a class="dropdown-item" href="#" data="EUR" value="GR">Greece</a>
-                  <a class="dropdown-item" href="#" data="ISK" value="IS">Iceland</a>
-                  <a class="dropdown-item" href="#" data="JMD" value="JM">Jamaica</a>
-                  <a class="dropdown-item" href="#" data="MXN" value="MX">Mexico</a>
-                  <a class="dropdown-item active" href="#" data="PHP" value="PH">Phillipines</a>
-                </div>
-              </div>
-
-
-
-        </div>
+        
         <div class="col countryGrid">
           <span class="country">?</span>
           <img id="flag" src="">
@@ -55,7 +51,7 @@
           </div>
           <div>
             Currency:
-            <span class="currency"></span>
+            <span class="currency">?</span>
           </div>
           <div>
             Conversion rate:

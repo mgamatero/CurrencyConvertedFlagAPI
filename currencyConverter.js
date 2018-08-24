@@ -23,7 +23,7 @@ $(document).ready(function () {
     var flagName=""
 
     function convert() {
-        $.get("https://apilayer.net/api/live?access_key=" + key + "&from=" + sourceCurrency + "&to=" + destinationCurrency)
+        $.get("https://cors-anywhere.herokuapp.com/http://apilayer.net/api/live?access_key=" + key + "&from=" + sourceCurrency + "&to=" + destinationCurrency)
             .done(function (data) {
                 console.log(data)  //returns JSON
                 
@@ -32,12 +32,11 @@ $(document).ready(function () {
                 $countryCode.html(flagName)
                 $currency.html(destinationCurrency)
                 $converted.html(data.quotes["USD"+destinationCurrency])
-                
-               
+                         
                 
             })
             .fail(function (e) {
-                alert(e)
+                console.log(e)
             })
     }
 
