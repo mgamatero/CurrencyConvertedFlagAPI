@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Currency Converter and Flag - APIs</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./currencyConverter.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">USD Currency Converter</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div class="container">
+    <span> Source: USD</span>
+
+    <main>
+      <div class="row">
+        <div class="convertTo">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  Select country: 
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" data="AFN" value="AF">Afghanistan</a>
+                  <a class="dropdown-item" href="#" data="AUD" value="AU">Australia</a>
+                  <a class="dropdown-item" href="#" data="BGN" value="BG">Bulgaria</a>
+                  <a class="dropdown-item" href="#" data="EUR" value="GR">Greece</a>
+                  <a class="dropdown-item" href="#" data="ISK" value="IS">Iceland</a>
+                  <a class="dropdown-item" href="#" data="JMD" value="JM">Jamaica</a>
+                  <a class="dropdown-item" href="#" data="MXN" value="MX">Mexico</a>
+                  <a class="dropdown-item active" href="#" data="PHP" value="PH">Phillipines</a>
+                </div>
+              </div>
+
+
+
+        </div>
+        <div class="col countryGrid">
+          <span class="country">?</span>
+          <img id="flag" src="">
+          <div>
+            <span>Country Code: </span>
+            <span class="countryCode">?</span>
+          </div>
+          <div>
+            Currency:
+            <span class="currency"></span>
+          </div>
+          <div>
+            Conversion rate:
+          </div>
+          <div class="converted">x</div>
+        </div>
+      </div>
+
+
+
+
+    </main>
+  </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+<script src="./currencyConverter.js"></script>
+
+</html>

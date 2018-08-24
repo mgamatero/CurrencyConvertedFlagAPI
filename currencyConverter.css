@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.convertTo, .countryGrid{
+    background-color: rgb(54, 52, 52);
+    border: solid 1px greenyellow;
+    color:greenyellow;
+    font-family: 'PT Serif', serif;
+}
+
+.countryGrid{
+    max-width:50%;
+}
+
+.currency{
+
+}
+
+.converted{
+     font-size:3rem;
+}
+
+
