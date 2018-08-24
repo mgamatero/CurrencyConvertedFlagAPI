@@ -13,11 +13,7 @@
 
 .countryGrid{
     align-content: center;
-    max-width: 30%;
-}
-
-.currency{
-
+    max-width: 80%;
 }
 
 .converted{
@@ -26,6 +22,16 @@
 
 .convertTo{
     margin-left: 10px;
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+{
+    a h2{
+            display:none;
+        }
 }
 
 
