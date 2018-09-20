@@ -31,7 +31,7 @@ $(document).ready(function () {
                 $flag.attr("src","https://www.countryflags.io/"+ flagName +"/shiny/48.png")
                 $countryCode.html(flagName)
                 $currency.html(destinationCurrency)
-                $converted.html(data.quotes["USD"+destinationCurrency])
+                $converted.html(data.quotes["USD"+destinationCurrency]) //Only this line uses the returned json file from the website
                          
                 
             })

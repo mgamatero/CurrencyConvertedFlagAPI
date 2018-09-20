@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     font-size: 16px;
     vertical-align: middle;
@@ -23,15 +23,16 @@
 .convertTo{
     margin-left: 10px;
 }
-
+*/
 
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) 
+and (orientation : landscape)
 {
-    a h2{
+    .navbar{
             display:none;
         }
 }
 
-
+ 

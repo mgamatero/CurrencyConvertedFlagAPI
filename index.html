@@ -7,56 +7,107 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Currency Converter and Flag - APIs</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="./currencyConverter.css">
 </head>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><h2>Currency Converter - </h2></a>
-   <span><h2>Convert from USD to </h2></span>
-    <div class="convertTo">
-      <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Select country: 
+  <nav class="navbar navbar-expand-sm navbar-dark bg-secondary text-light">
+    <h4 class="display-4 text-center"><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign mr-3"></i>
+      Currency Converter<i class="fas fa-dollar-sign ml-3"></i><i class="fas fa-dollar-sign"></i> </h4>
+  </nav>
+
+  <!-- MAIN HEAD -->
+  <header class="bg-light p-2">
+    <div class="container">
+      <h3 class="display-5 text-center">Your USD in
+        <div class="dropdown">
+          <button type="button" class="btn btn-lg btn-info btn-block dropdown-toggle m-1" data-toggle="dropdown">
+            Select country:
           </button>
           <div class="dropdown-menu">
+            <a class="dropdown-item" href="#" data="AFN" value="AD">Andorra</a>
+            <a class="dropdown-item" href="#" data="AED" value="AE">United Arab Emirates</a>
             <a class="dropdown-item" href="#" data="AFN" value="AF">Afghanistan</a>
+            <a class="dropdown-item" href="#" data="XCD" value="AG">Antigua and Barbuda</a>
+            <a class="dropdown-item" href="#" data="XCD" value="AI">Anguilla</a>
+            <a class="dropdown-item" href="#" data="ALL" value="AL">Albania</a>
+            <a class="dropdown-item" href="#" data="AMD" value="AM">Armenia</a>
+            <a class="dropdown-item" href="#" data="AUD" value="AN">Netherlands Antilles</a>
+            <a class="dropdown-item" href="#" data="AOA" value="AO">Angola</a>
+            <a class="dropdown-item" href="#" data="--" value="AQ">Antartica</a>
+            <a class="dropdown-item" href="#" data="USD" value="AS">American Samoa</a>
+            <a class="dropdown-item" href="#" data="EUR" value="AT">Austria</a>
             <a class="dropdown-item" href="#" data="AUD" value="AU">Australia</a>
+            <a class="dropdown-item" href="#" data="AWG" value="AW">Aruba</a>
+            <a class="dropdown-item" href="#" data="AZN" value="AZ">Azerbaijan</a>
+
+            <a class="dropdown-item" href="#" data="BAM" value="BA">Bosnia and Herzegovina</a>
+            <a class="dropdown-item" href="#" data="BBD" value="BB">Barbados</a>
+            <a class="dropdown-item" href="#" data="BDT" value="BD">Bangladesh</a>
+            <a class="dropdown-item" href="#" data="EUR" value="BE">Belgium</a>
+            <a class="dropdown-item" href="#" data="XOF" value="BF">Burkina Faso</a>
             <a class="dropdown-item" href="#" data="BGN" value="BG">Bulgaria</a>
+            <a class="dropdown-item" href="#" data="BHD" value="BH">Bahrain</a>
+            <a class="dropdown-item" href="#" data="BIF" value="BI">Burundi</a>
+            <a class="dropdown-item" href="#" data="XOF" value="BJ">Benin</a>
+
+            <a class="dropdown-item" href="#" data="EUR" value="BL">Saint Barthelemy</a>
+            <a class="dropdown-item" href="#" data="BMD" value="BM">Bermuda</a>
+            <a class="dropdown-item" href="#" data="BND" value="BN">Brunei Darussalam</a>
+            <a class="dropdown-item" href="#" data="BOV" value="BO">Bolivia</a>
+            <a class="dropdown-item" href="#" data="USD" value="BQ">Bonaira, Sint Eustatius and Saba</a>
+            <a class="dropdown-item" href="#" data="BRL" value="BR">Brazil</a>
+            <a class="dropdown-item" href="#" data="BSN" value="BS">Bahamas</a>
+            <a class="dropdown-item" href="#" data="BTN" value="BT">Bhutan</a>
+            <a class="dropdown-item" href="#" data="NOK" value="BV">Bouvet Island</a>
+            <a class="dropdown-item" href="#" data="BWP" value="BW">Botswana</a>
+            <a class="dropdown-item" href="#" data="BYR" value="BY">Belarus</a>
+            <a class="dropdown-item" href="#" data="BZD" value="BZ">Belize</a>
+
             <a class="dropdown-item" href="#" data="EUR" value="GR">Greece</a>
             <a class="dropdown-item" href="#" data="ISK" value="IS">Iceland</a>
             <a class="dropdown-item" href="#" data="JMD" value="JM">Jamaica</a>
             <a class="dropdown-item" href="#" data="MXN" value="MX">Mexico</a>
-            <a class="dropdown-item" href="#" data="PHP" value="PH">Phillipines</a>
+            <a class="dropdown-item" href="#" data="PHP" value="PH">Philippines</a>
           </div>
-        </div>
-  </div>
-    
-  </nav>
+      </h3>
+    </div>
+    </div>
+
+  </header>
   <div class="container">
-    
 
     <main>
       <div class="row">
-        
-        <div class="col countryGrid">
-          <span class="country">?</span>
-          <img id="flag" src="">
-          <div>
-            <span>Country Code: </span>
-            <span class="countryCode">?</span>
+        <div class="col-md-6">
+          <div class="card text-left text-light border-light bg-secondary m-2">
+            <div class="card-title">
+            <h4 class="country display-5 text-center mt-1">Country:</h4>
+            <div class="d-flex">
+            <img id="flag" src="" class="m-auto">
           </div>
-          <div>
-            Currency:
-            <span class="currency">?</span>
+        </div>
+            <div class="card-body">
+              <span>Country Code: </span>
+              <span class="countryCode">?</span>
+              <div>
+                Currency:
+                <span class="currency">?</span>
+              </div>
+              <div>
+                Conversion rate:
+                <strong><span class="converted">?</span></strong>
+              </div>
+            </div>
           </div>
-          <div>
-            Conversion rate:
-          </div>
-          <div class="converted">x</div>
+
         </div>
       </div>
 
