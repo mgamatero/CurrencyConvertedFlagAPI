@@ -1,29 +1,18 @@
-/* *{
-    box-sizing: border-box;
-    font-size: 16px;
-    vertical-align: middle;
+
+body{
+    background-image: url("./img/vacation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-.convertTo, .countryGrid{
-    background-color: rgb(88, 85, 85);
-    border: solid 1px greenyellow;
-    color:greenyellow;
-    font-family: 'PT Serif', serif;
+.top-section{
+    background:linear-gradient(0deg,rgba(40, 40, 41, 0.705),rgba(57, 57, 63, 0.603)),url("./img/currency.jpg");
+    /* background-image: url("./img/currency.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.countryGrid{
-    align-content: center;
-    max-width: 80%;
-}
-
-.converted{
-     font-size:3rem;
-}
-
-.convertTo{
-    margin-left: 10px;
-}
-*/
 
 @media only screen 
 and (min-device-width : 375px) 

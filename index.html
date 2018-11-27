@@ -18,17 +18,27 @@
   crossorigin="anonymous"></script>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-secondary text-light">
-    <h4 class="display-4 text-center"><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign mr-3"></i>
-      Currency Converter<i class="fas fa-dollar-sign ml-3"></i><i class="fas fa-dollar-sign"></i> </h4>
-  </nav>
+  
+  <header>
+    <div id="top-section_overlay">
+    <div class="top-section top text-light text-center p-4 border-secondary">
+        <h4 class="display-4 text-center"><i class="fas fa-dollar-sign mr-3"></i>
+          Currency Converter<i class="fas fa-dollar-sign ml-3"></i>
+          <h5>A realtime USD conversion rate utility</h5>
+        </h4>
+      </div>
+    </div>
+  </header>
 
-  <!-- MAIN HEAD -->
-  <header class="bg-light p-2">
-    <div class="container">
-      <h3 class="display-5 text-center">Your USD in
+  
+
+
+  <div class="container">
+    <main>
+
+      <h3 class="display-5 text-center text-light mt-3">Your USD in
         <div class="dropdown">
-          <button type="button" class="btn btn-lg btn-info btn-block dropdown-toggle m-1" data-toggle="dropdown">
+          <button type="button" class="btn btn-lg btn-rounded btn-warning btn-info dropdown-toggle m-1" data-toggle="dropdown">
             Select country:
           </button>
           <div class="dropdown-menu">
@@ -78,22 +88,20 @@
             <a class="dropdown-item" href="#" data="PHP" value="PH">Philippines</a>
           </div>
       </h3>
-    </div>
-    </div>
 
-  </header>
-  <div class="container">
 
-    <main>
       <div class="row">
-        <div class="col-md-6">
-          <div class="card text-left text-light border-light bg-secondary m-2">
-            <div class="card-title">
-            <h4 class="country display-5 text-center mt-1">Country:</h4>
-            <div class="d-flex">
-            <img id="flag" src="" class="m-auto">
-          </div>
+        <div class="col-md-3">
         </div>
+
+        <div class="col-md-6">
+          <div class="card text-center text-success border-success bg-dark m-4">
+            <div class="card-title">
+              <h4 class="country display-5 text-center mt-1">Country:</h4>
+              <div class="d-flex">
+                <img id="flag" src="" class="m-auto">
+              </div>
+            </div>
             <div class="card-body">
               <span>Country Code: </span>
               <span class="countryCode">?</span>
@@ -108,8 +116,10 @@
             </div>
           </div>
 
+
+          <div class="col-md-3">
+          </div>
         </div>
-      </div>
 
 
 
