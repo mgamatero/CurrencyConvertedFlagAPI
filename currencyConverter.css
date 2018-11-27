@@ -7,7 +7,7 @@ body{
 }
 
 .top-section{
-    background:linear-gradient(0deg,rgba(40, 40, 41, 0.705),rgba(57, 57, 63, 0.603)),url("./img/currency.jpg");
+    background:linear-gradient(0deg,rgba(25, 25, 26, 0.705),rgba(23, 23, 26, 0.603)),url("./img/currency.jpg");
     /* background-image: url("./img/currency.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
